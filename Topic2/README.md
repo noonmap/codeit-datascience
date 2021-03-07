@@ -1,4 +1,4 @@
-# Title: DataFrame 다루기
+# Topic2: DataFrame 다루기
 ## Content
 - Pandas 활용하기
 - Pandas 실습; Pandas를 사용하여 데이터를 다뤄보기
