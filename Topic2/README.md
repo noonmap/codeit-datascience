@@ -23,7 +23,7 @@ df = pd.read_csv("~~.csv")
 - `df[['col_1', 'col_2']]` : col_1번째와 col_2번째 data를 받아옴
 - `df['row_1' : 'row_3']` : data가 연속적으로 있을 경우, row_1부터 row_3까지 slicing 적용됨
 - <del>`df['col_1' : 'col_3']`</del> : **column에 대해 slicing을 하고 싶으면, 아래와 같은 방식으로 해야 함**
-- `df.loc[:, 'col_1' : 'col_3'] : col_1부터 col_2까지 slicing 적용
+- `df.loc[:, 'col_1' : 'col_3']` : col_1부터 col_2까지 slicing 적용
 - `df.loc['row_1' : 'row_N', 'col_1' : 'col_N']` : slicing이 적용 &rarr; row_1\~row_N, col_1\~col_N 에 해당하는 data를 받아옴
 ### 조건으로 data를 인덱싱하기
 - `df.loc[[True, False, True, True]]` : True인 값의 index(0, 2, 3번째)의 row만 가져옴. data의 총 row 개수가 4보다 큰 경우, 생략된 부분은 default로 False로 취급함
