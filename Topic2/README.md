@@ -14,6 +14,17 @@ import pandas as pd
 df = pd.read_csv("~~.csv")
 ```
 아래의 내용들은 위 코드를 전제로 함.
++ [data 1개 혹은 1줄을 받아오기](#data-1개-혹은-1줄을-받아오기)
++ [data 여러 줄 받아오기](#data-여러-줄-받아오기)
++ [조건으로 data를 인덱싱하기](#조건으로-data를-인덱싱하기)
++ [위치(Index)로 인덱싱하기](#위치index로-인덱싱하기)
++ [data 1개 혹은 1줄의 값 쓰기](#data-1개-혹은-1줄의-값-쓰기)
++ [data 여러 줄의 값 쓰기](#data-여러-줄의-값-쓰기)
++ [data 값 추가 및 삭제](#data-값-추가-및-삭제)
++ [index/column 설정하기](#indexcolumn-설정하기)
++ [큰 DataFrame 살펴보기](#큰-dataframe-살펴보기)
++ [큰 Series 살펴보기](#큰-series-살펴보기)
+
 ### data 1개 혹은 1줄을 받아오기
 - `df.loc['row', 'col']` <br> df의 row=='row', col=='col'인 데이터를 보여줌
 - `df.loc['row', :]` `df.loc['row']` <br> df의 row=='row'인 데이터를 보여줌 (row=='row'에 해당하는 모든 column data들을 보여줌)
