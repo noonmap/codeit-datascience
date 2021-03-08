@@ -14,6 +14,7 @@
 - `df.plot(y=['KBS', 'JTBC'])` : 'KBS'와 'JTBC'에 대한 line graph만 그려줌
 - `df[:, ['KBS', 'JTBC']].plot()` : (위와 같음)
 ### bar graph
-- `df.plot(kind='bar') : df라는 dataframe에 대한 bar graph가 그려짐
-- `df.plot(kind='barh') : 가로로 눕혀진 bar graph가 그려짐
-- `df.plot(kind='bar', stacked=True) : 쌓여진 bar graph가 나타남
+- `df.plot(kind='bar')` : df라는 dataframe에 대한 bar graph가 그려짐
+- `df.plot(kind='barh')` : 가로로 눕혀진 bar graph가 그려짐
+- `df.plot(kind='bar', stacked=True)` : 쌓여진 bar graph가 나타남
+- 
