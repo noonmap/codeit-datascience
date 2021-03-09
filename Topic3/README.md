@@ -7,7 +7,13 @@
 5. 새로운 인사이트 발견하기
 ## 실습 문제
 1. 실리콘 밸리에는 누가 일할까? 1 (막대 그래프)
+2. 실리콘 밸리에는 누가 일할까? 2 (파이 그래프)
 ## Contents
+```python
+import pandas as pd
+df = pd.read_csv("~.csv")
+```
+아래의 정리는 위의 코드를 전제한 내용임
 ### line graph
 - `%matplotlib inline` 
 <br> Jupyter 노트북에서 matplotlib를 사용하기 위해 이 문구를 설정해줘야 함
@@ -25,4 +31,7 @@
 <br> 가로로 눕혀진 bar graph가 그려짐
 - `df.plot(kind='bar', stacked=True)`
 <br> 쌓여진 bar graph가 나타남
-- 
+### pie graph
+- `df.loc['col'].plot(kind='pie')`
+<br> df의 col=='col'인 Series에 대해 pie graph가 그려짐
+
