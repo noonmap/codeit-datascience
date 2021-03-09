@@ -32,6 +32,6 @@ df = pd.read_csv("~.csv")
 - `df.plot(kind='bar', stacked=True)`
 <br> 쌓여진 bar graph가 나타남
 ### pie graph
-- `df.loc['col'].plot(kind='pie')`
-<br> df의 col=='col'인 Series에 대해 pie graph가 그려짐
+- `df.loc['row'].plot(kind='pie')`
+<br> df의 row=='row'인 Series에 대해 pie graph가 그려짐
 
