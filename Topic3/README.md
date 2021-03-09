@@ -37,5 +37,6 @@ df = pd.read_csv("~.csv")
 <br> df의 row=='row'인 Series에 대해 pie graph가 그려짐
 ### histogram
 - `df.plot(kind='hist', y='col')` `df.plot(kind='hist', y='col', bins=10)`
-  - x축='col'인 histogram이 그려짐 (막대의 default 개수는 10개)
+  - 'col'에 대한 histogram이 그려짐 (막대의 default 개수는 10개)
+  - **인자는 `y='col'`이지만, 'col'에 대한 값들은 x축에 나타남**
   - `bins=10` : histogram의 막대의 개수를 나타냄
