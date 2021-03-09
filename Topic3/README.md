@@ -8,7 +8,6 @@
 ## 실습 문제
 1. 실리콘 밸리에는 누가 일할까? 1 (막대 그래프)
 2. 실리콘 밸리에는 누가 일할까? 2 (파이 그래프)
-3. 스타벅스 음료의 칼로리는? 1    (히스토그램)
 ## Contents
 ```python
 import pandas as pd
@@ -40,3 +39,12 @@ df = pd.read_csv("~.csv")
   - 'col'에 대한 histogram이 그려짐 (막대의 default 개수는 10개)
   - **인자는 `y='col'`이지만, 'col'에 대한 값들은 x축에 나타남**
   - `bins=10` : histogram의 막대의 개수를 나타냄
+### box plot
+- `df.plot(kind='box', y='col')` `df['col'].plot(kind='box')`
+<br> 'col'인 column에 대한 통계값을 box plot을 통해 볼 수 있음
+- `df.plot(kind='box', y=['col1', 'col2', 'col3'])`
+<br> 'col1','col2','col3'인 여러 column에 대한 통계값을 한번에 볼 수 있음
+### Scatter plot
+산점도(Scatter plot)는 두 데이터 간의 관계를 확인하기 쉬운 그래프 유형이다.
+- `df.plot(kind='scatter', x='col1', y='col2')`
+<br> x축='col1', y축='col2'인 scatter graph를 그려줌
