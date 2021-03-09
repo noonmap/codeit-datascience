@@ -29,7 +29,7 @@ df = pd.read_csv("~~.csv")
 - `df.loc['row', 'col']` <br> df의 row=='row', col=='col'인 데이터를 보여줌
 - `df.loc['row', :]` `df.loc['row']` <br> df의 row=='row'인 데이터를 보여줌 (row=='row'에 해당하는 모든 column data들을 보여줌)
 - `df.loc[:, 'column']` <del>`df.loc['column']`</del> <br> col='col'인 데이터들을 보여줌 **column만 표시하고 싶을 땐, row indexing이 생략되면 error가 뜸**
-- `type(df.loc[:, 'column']` &rArr; `pandas.core.series.Series` <br> Series는 Pandas의 1차원 자료형임
+- `type(df.loc[:, 'column'])` &rArr; `pandas.core.series.Series` <br> Series는 Pandas의 1차원 자료형임
 ### data 여러 줄 받아오기
 - `df.loc[['row_1', 'row_2']]` `df[['row_1', 'row_2']]` <br> row=='row1', row=='row2'인 data를 받아옴
 - `df['row_1' : 'row_3']` : data가 연속적으로 있을 경우, row_1부터 row_3까지 slicing 적용
@@ -112,7 +112,7 @@ df = pd.read_csv("~~.csv")
 ### 큰 Series 살펴보기
 - `df['col'].unique()`
 <br> col=='col'인 column Series에서, data값의 종류를 리스트로 반환
-- `df['col'].value_count()`
+- `df['col'].value_counts()`
 <br> col=='col'인 column Series에서, 각 data 종류들의 개수를 보여줌
 - `df['col'].describe()`
 <br> col=='col'인 column Series의 요약 정보(총 data개수, unique개수, 가장 많은 data의 종류, 가장 많은 data의 개수)를 알려줌
