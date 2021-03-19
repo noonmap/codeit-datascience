@@ -8,12 +8,13 @@ Pandas 활용 기초를 다지는 챕터입니다.
 1. 수강신청 준비하기 (조건 인덱싱)
 2. 강의실 배정하기 1 (조건 인덱싱, 값의 수정 및 추가)
 3. 강의실 배정하기 2 (조건 인덱싱, 값의 수정 및 추가)
-## Content
+## Contents
 ```python
 import pandas as pd
 df = pd.read_csv("~~.csv")
 ```
 아래의 내용들은 위 코드를 전제로 함.
+### Table of Contents
 + [data 1개 혹은 1줄을 받아오기](#data-1개-혹은-1줄을-받아오기)
 + [data 여러 줄 받아오기](#data-여러-줄-받아오기)
 + [조건으로 data를 인덱싱하기](#조건으로-data를-인덱싱하기)
