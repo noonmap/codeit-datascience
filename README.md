@@ -7,6 +7,8 @@
 ## 데이터 사이언스 입문 Topics
 - Topic 1: 데이터 사이언스 시작하기
 - Topic 2: DataFrame 다루기
+  - pandas로 data 다루기
 - Topic 3: 데이터 분석과 시각화
+  - pandas, seaborn으로 data 시각화(그래프)하기
 - Topic 4: 데이터 퀄리티 높이기
 - Topic 5: 데이터 만들기
