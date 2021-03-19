@@ -14,6 +14,7 @@ import pandas as pd
 df = pd.read_csv("~.csv")
 ```
 아래의 정리는 위의 코드를 전제한 내용임
+### Table of Contents
   * [line graph](#line-graph)
   * [bar graph](#bar-graph)
   * [pie graph](#pie-graph)
@@ -35,7 +36,7 @@ df = pd.read_csv("~.csv")
 ### line graph
 - `%matplotlib inline` 
 <br> Jupyter 노트북에서 matplotlib를 사용하기 위해 이 문구를 설정해줘야 함
-- `df.plot()` `df.ploy(kind='line')`
+- `df.plot()` `df.plot(kind='line')`
   - df라는 dataframe에 대한 line graph를 그림 (default: line)
   - kind로 graph 형식을 정해줄 수 있음.
 - `df.plot(y='KBS')` 
