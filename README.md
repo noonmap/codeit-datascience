@@ -11,4 +11,6 @@
 - Topic 3: 데이터 분석과 시각화
   - pandas, seaborn으로 data 시각화(그래프)하기
 - Topic 4: 데이터 퀄리티 높이기
+  - NaN, 중복값, 이상점 다루기
 - Topic 5: 데이터 만들기
+  - BeutifulSoup을 활용한 웹 스크래핑, 웹 크롤링
